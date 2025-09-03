@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pyetro Vilamil — Links</title>
+
+  <style>
+    :root {
+      --bg: linear-gradient(135deg,#f6f8ff 0%, #eef7f9 100%);
+      --accent1: #6c63ff;
+      --accent2: #00c2a8;
+      --muted: #6b7280;
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: var(--bg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background: rgba(255,255,255,0.95);
+      border-radius: calc(var(--radius)+6px);
+      box-shadow: 0 10px 30px rgba(42,55,90,0.12);
+      padding: 30px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .photo-frame {
+      width: 130px;
+      height: 130px;
+      margin: 0 auto 15px auto;
+      border-radius: 50%;
+      overflow: hidden;
+      padding: 5px;
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      border: 4px solid rgba(255,255,255,0.6);
+      box-shadow: 0 8px 20px rgba(108,99,255,0.18);
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    h1 {
+      margin: 8px 0 3px;
+      font-size: 22px;
+    }
+
+    p.handle {
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .link-btn {
+      padding: 14px 16px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #fff;
+      transition: transform .12s ease, box-shadow .12s ease;
+      box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+      display: inline-block;
+    }
+
+    .link-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(16,24,40,0.12);
+    }
+
+    .instagram {
+      background: linear-gradient(90deg,#833ab4,#fd1d1d,#fcb045);
+    }
+
+    .whatsapp {
+      background: linear-gradient(90deg,#25D366,#00a884);
+    }
+
+    @media (max-width: 420px) {
+      .photo-frame { width: 110px; height: 110px; }
+      .container { padding: 20px; }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="photo-frame">
+      <img src="https://raw.githubusercontent.com/pyetro450/Linktree-Pyetro/main/Linktree.jpg" alt="Foto de Pyetro Vilamil">
+    </div>
+    <h1>Pyetro Vilamil</h1>
+    <p class="handle">@pyetro.cruz_</p>
+
+    <div class="links">
+      <a class="link-btn instagram" href="https://instagram.com/pyetro.cruz_" target="_blank">Ir para Instagram</a>
+      <a class="link-btn whatsapp" href="https://wa.me/55489155103" target="_blank">Abrir no WhatsApp</a>
+    </div>
+  </div>
+</body>
+</html>
